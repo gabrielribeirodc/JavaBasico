@@ -1,0 +1,4 @@
+Projeto do BlueJ para ensino das conceitos de POO.
+
+Prof. Filipo Novo Mór
+filipomor.com
