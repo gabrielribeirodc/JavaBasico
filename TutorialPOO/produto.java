@@ -1,30 +1,5 @@
-class Produto {
-    private String nome;
-    private double preco;
-    private int codigo;
-
-    // Construtor
-    public Produto(String nome, double preco, int codigo) {
-        this.nome = nome;
-        this.preco = preco;
-        this.codigo = codigo;
-    }
-    
-    // Getters and Setters...
-
-    void exibirInfo() {
-        System.out.println("Nome: " + nome + ", Preço: " + preco + ", Código: " + codigo);
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Produto produto = new Produto("Chocolate", 15.99, 123);
-        produto.exibirInfo();
-    }
-}
-
-class Produto {
+class Produto 
+{
     private String nome;
     private double preco;
     private int codigo;
