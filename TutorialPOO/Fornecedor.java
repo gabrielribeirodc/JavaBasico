@@ -29,7 +29,20 @@ class Fornecedor
         this.telefone = telefone;
     }
 
-    void exibirInfo() {
+    void exibirInfo()
+    {
         System.out.println("Fornecedor Nome: " + nome + ", Endereço: " + endereco + ", Telefone: " + telefone);
+    }
+
+    void exibirInfo(boolean detalhado) 
+    {
+        if (detalhado) 
+        {
+            System.out.println("Fornecedor Nome: " + nome + ", Endereço: " + endereco + ", Telefone: " + telefone);
+        } 
+        else 
+        {
+            exibirInfo();
+        }
     }
 }
