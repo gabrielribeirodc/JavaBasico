@@ -33,4 +33,33 @@ public class Main {
             p.exibirInfo();
         }
     }
-}*/
+}
+
+// exercicio 10
+/*
+public class Main 
+{
+    public static void main(String[] args) 
+    {
+        // Criando alguns produtos
+        Produto p1 = new Produto("Açúcar Orgânico", 5.50, 201);
+        Produto p2 = new Produto("Farinha de Trigo", 2.80, 202);
+        Produto p3 = new Produto("Chocolate Amargo", 10.00, 203);
+
+        // Lista de produtos
+        Produto[] produtos = { p1, p2, p3 };
+
+        // Pesquisa por palavra "Açúcar"
+        String busca = "açúcar";
+
+        System.out.println("Produtos que contêm a palavra '" + busca + "':");
+        for (Produto p : produtos) 
+        {
+            if (p.nomeContem(busca)) 
+            {
+                p.exibirInfo();
+            }
+        }
+    }
+} 
+*/ 
