@@ -41,5 +41,14 @@ class Produto
     void exibirInfo() {
         System.out.println("Nome: " + nome + ", Preço: " + preco + ", Código: " + codigo);
     }
+    
+    // Método que verifica se o nome contém uma palavra ou substring
+    public boolean nomeContem(String palavra) 
+    {
+        if (nome != null && palavra != null) 
+        {
+            return nome.toLowerCase().contains(palavra.toLowerCase());
+        }
+        return false;
+    }
 }
-
