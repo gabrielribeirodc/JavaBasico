@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=MateriaPrima
+comment1.params=
+comment1.target=java.lang.String\ getUnidadeDeMedida()
+comment2.params=unidadeDeMedida
+comment2.target=void\ setUnidadeDeMedida(java.lang.String)
+comment3.params=
+comment3.target=void\ exibirInfo()
+numComments=4

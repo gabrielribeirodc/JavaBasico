@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Gondola
+comment1.params=produto\ capacidadeMaxima
+comment1.target=Gondola(Produto,\ int)
+comment2.params=quantidadeAdicionar
+comment2.target=boolean\ adicionarProduto(int)
+comment3.params=quantidadeRemover
+comment3.target=boolean\ removerProduto(int)
+comment4.params=
+comment4.target=Produto\ getProduto()
+comment5.params=
+comment5.target=int\ getQuantidade()
+comment6.params=quantidade
+comment6.target=void\ setQuantidade(int)
+comment7.params=
+comment7.target=int\ getCapacidadeMaxima()
+numComments=8

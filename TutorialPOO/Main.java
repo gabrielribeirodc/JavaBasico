@@ -1,6 +1,31 @@
 import java.util.ArrayList;
 
-class Main 
+public class Main {
+    public static void main(String[] args) {
+        // Criar produtos
+        Produto produto1 = new Produto("Coca-Cola", 5.0, 101);
+        Produto produto2 = new Produto("Chocolate", 3.5, 202);
+
+        // Criar gôndolas
+        Gondola gondola1 = new Gondola(produto1, 10);
+        Gondola gondola2 = new Gondola(produto2, 15);
+
+        // Criar vending machine
+        VendingMachine vendingMachine = new VendingMachine(2);
+        vendingMachine.adicionarGondola(gondola1);
+        vendingMachine.adicionarGondola(gondola2);
+
+        // Simular reabastecimento
+        Produto[] produtosReabastecidos = {produto1, produto2};
+        int[] quantidades = {5, 10};
+        vendingMachine.receberReabastecimento(produtosReabastecidos, quantidades);
+
+        // Imprimir status
+        System.out.println(vendingMachine.enviarMensagemReabastecimento());
+    }
+}
+
+/*class Main 
 {
     public static void main(String[] args) {
         ArrayList<Produto> produtos = new ArrayList<>();
@@ -15,7 +40,7 @@ class Main
             produto.exibirInfo();
         }
     }
-}
+}*/
 
 // exercicio 9
 /*
