@@ -3,14 +3,14 @@
 *********************************************************************        
 *** Prof. Filipo Mor - filipomor.com - github.com/ProfessorFilipo ***
 *********************************************************************
-*** Exercicio: popule uma matriz N*N com valores inteiros         ***
-*** negativos aleatório (-N*N ate 0) e em seguida mostre:         ***
-***   a) o conteúdo da matriz, incluindo os indices das linhas e  ***
-***      colunas;                                                 ***
-***  b) inverta o sinal dos valores maior que a média dos         ***
-***     elementos da matriz                                       ***
-***  c) calcule e mostro o produtorio dos elementos com valor     ***
-***     menor que a média dos valores dos elementos da matriz     ***
+*** Exercicio: popule uma matriz Linhas*Colunas com valores       ***
+*** positivos aleatório (0 até Linhas*Colunas) e em seguida       ***
+*** mostre:                                                       ***
+***   a) o conteúdo da matriz                                     ***
+***   b) media dos elementos da diagonal secundaria, se a matriz  ***
+***      for quadrada (Linhas == Colunas)                         ***
+***   c) media dos elementos impares                              ***
+***   d) maior e menor valores pares                              ***
 *********************************************************************/
 import java.util.Random;
 import java.util.Scanner;
@@ -51,6 +51,7 @@ public class Principal
         Colunas = leitor.nextInt();        
         
         int[][] M = new int[Linhas][Colunas];
+        menorPar = Linhas * Colunas; // atribui um valor "grande" a variavel.
         
         for(int L=0; L<Linhas; L++)
         {
@@ -61,7 +62,7 @@ public class Principal
                 { 
                     mediaImpares += M[L][C];
                     contImpares++;
-                    System.out.printf("Impares: M[%2d][%2d]: %2d\n", L, C, M[L][C]);
+                    //System.out.printf("Impares: M[%2d][%2d]: %2d\n", L, C, M[L][C]);
                 }
                 else
                 {
@@ -72,7 +73,7 @@ public class Principal
                 //matriz quadrada? Elemento esta na diagonal secundaria?
                 if((Linhas == Colunas) && (Colunas-1-L == C))
                 {
-                   //System.out.printf("M[%2d][%2d]: %2d\n", L, C, M[L][C]);
+                   //System.out.printf("Diagonal Secundaria: M[%2d][%2d]: %2d\n", L, C, M[L][C]);
                    mediaDiagonalSecundario += M[L][C];
                    contDiag++;
                 }
@@ -85,11 +86,11 @@ public class Principal
         if(Linhas == Colunas)
         {
              mediaDiagonalSecundario /= contDiag;    
-             System.out.printf("\n::: Media dos elementos da diagnal secundaria: %3.2f\n", mediaDiagonalSecundario);
+             System.out.printf("\n::: Media dos elementos da diagonal secundaria: %3.2f\n", mediaDiagonalSecundario);
         }
         else System.out.printf("\n::: Matriz nao eh quadrada, portanto, nao eh possivel definir a diagonal secundaria\n");
         System.out.printf("::: Media dos elementos impares: %3.2f\n", mediaImpares);
-        System.out.printf("::: Maior valor Par: %d\n:::Menor valor Par: %d\n", maiorPar, menorPar);
+        System.out.printf("::: Maior valor Par: %d\n::: Menor valor Par: %d\n", maiorPar, menorPar);
         
         
         
