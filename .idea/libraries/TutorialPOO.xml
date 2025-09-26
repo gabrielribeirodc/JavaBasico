@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="TutorialPOO">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/TutorialPOO/tutorialPOO_ERP_parte01.jar!/" />
+      <root url="jar://$PROJECT_DIR$/TutorialPOO/tutorialPOO_ERP_parte02.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
