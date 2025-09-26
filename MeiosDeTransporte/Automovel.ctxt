@@ -1,7 +1,0 @@
-#BlueJ class context
-comment0.target=Automovel
-comment1.params=nome\ capacidade
-comment1.target=Automovel(java.lang.String,\ double)
-comment2.params=
-comment2.target=void\ mover()
-numComments=3

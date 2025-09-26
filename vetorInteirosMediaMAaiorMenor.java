@@ -14,7 +14,7 @@ public class Ex02
             System.out.printf("\nQuantidade informada (%d) é inválida!\n");
             System.exit(0);
         }
-        
+
         int []numeros = new int[quantidade];
         
         int i;
@@ -30,7 +30,7 @@ public class Ex02
         }
         
         System.out.printf("\nMaior valor: %d\nMenor valor: %d\nMedia: %2.2f\n", maior, menor, media/quantidade);
-
+        // Implementei o imprimir a quantidade do array
         System.out.printf("Quantidade de elementos no array: %d\n", listaNumeros);
 
 
