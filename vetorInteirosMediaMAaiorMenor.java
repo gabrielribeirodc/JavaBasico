@@ -29,6 +29,7 @@ public class Ex02
 
         System.out.printf("\nMaior valor: %d\nMenor valor: %d\nMedia: %2.2f\n", maior, menor, media/quantidade);
 
+        System.out.printf("Quantidade de elementos no array: %d\n", listaNumeros);
 
 
 
